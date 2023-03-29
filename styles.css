@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(165, 222, 224);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+#about {
+    background-image: url('images/Home_Background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects {
+    background-image: url('images/Home_Background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-image: url('images/Home_Background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    margin-left: auto; /* Add this line to push the sections to the right */
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.centered h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white; /* Set the text color to white */
+}
+
+.centered p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: white; /* Set the text color to white */
+}
+
+#projects h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    
+}
+
+.project img {
+    max-width: 400px;
+    margin-right: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+#home {
+    background-image: url('images/Home_Background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project h3 {
+    font-size: 3rem; 
+    margin-bottom: 2rem; /* Changes space between project title and project description*/
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+}
+
+/* Add these styles */
+
+.picture-row img {
+    width: 20%; /* Adjust this value to control the width of the pictures */
+    max-width: 250px; /* Update this line to make the pictures a bit bigger */
+    margin: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .picture-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .picture-row img {
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .picture-row img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Add modal close button style */
+  .modal-close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #about h2 {
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Add space between the text and the first row of pictures */
+  }
+  
+  /* Add this style to make the modal window a square */
+  .modal-content {
+    max-width: 500px; /* Change this value to control the size of the modal */
+    width: 80%;
+    aspect-ratio: 2.2/1; /* Make the modal window a square */
+  }
+  
+  #about h2,
+  #projects h2 {
+      color: white; /* Add this line to set the color of the titles to white */
+  }
+  
+  .project h3,
+  .project p {
+      color: white; /* Add this line to set the color of the project titles and text to white */
+  }
+  
+.modal-content h1 {
+    margin-bottom: 20px; /* Adjust this value to control the space between the title and the text */
+}
+
+#contact {
+    text-align: center;
+    color: white;
+}
+
+.contact-title {
+    margin-bottom: 2rem;
+}
+
+.contact-images {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* space between image containers in Contact section*/
+}
+
+.contact-image {
+    max-width: 30%;
+    margin-bottom: 6rem;
+    margin-top: 10rem;
+}
+
+.contact-image img {
+    width: 200px; /* Adjust the size of the images */
+    display: block;
+    margin: 0 auto; /* Center the images */
+}
+
+.hover-enlarge {
+    transition: transform 0.3s;
+}
+
+.hover-enlarge:hover {
+    transform: scale(1.1);
+}
+
+.contact-image p {
+    color: white;
+    text-align: center;
+    margin-top: 30px; /* Adjust the space between the image and the text */
+  }
