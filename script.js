@@ -24,6 +24,28 @@ const projects = [
         interface and web deployment was done using Streamlit. Libraries used are: pandas, numpy, matplotlib and scikit-learn.`,
         link: "https://lukasb4-carpriceprediction.streamlit.app"
     },
+    {
+        title: "Chatroom",
+        image: "images/Project_Chatroom.png",
+        description: `Created a simple chat room for writing. When a user clicks on the website, he is first asked for his username 
+        and a PIN. After that, a specific chat room related to the PIN opens and users can communicate with each other in real time.
+        <br> In addition, the chat is stored in a mongoDB database and can be accessed at a later time using the same PIN. <br><br>
+        To implement this I used the Flask framework. With the help of the Flask-SocketIO extension I realized the real-time, 
+        bidirectional communication between web clients and server. Flask-PyMongo was used to link the Flask application to the mongoDB
+        database and work with it.<br><br>The user interface was implemented in 2 html files, deployment was done with Heroku. 
+        Libraries used are: flask, flask_pymongo, flask_socketio, waitress, pytz. `,
+        link: "https://thawing-cliffs-57399.herokuapp.com/"
+    },
+    {
+        title: "24h Weather Prediction",
+        image: "images/Project_WeatherPrediction.png",
+        description: `Currently I am working on this project. I want to create a website that forecasts weather data for Ulm hourly for 
+        the next 24 hours. The data for this comes from the openweather API and the Solcast API. In addition, solar radiation should also
+        be predicted, so that homeowners with solar systems can better plan their energy consumption. <br><br>
+        The basic architecture is shown in the diagram on the left and is already partly in place. Since it is a multi-output time-series
+        forecasting problem and that is still complex for me, I am currently still trying out which machine learning model makes the most 
+        sense here.<br><br> Libraries used so far are: pandas, numpy, pymongo, scikit-learn, pytorch.` ,
+    }
     // Add more projects as needed
 ];
 
@@ -40,12 +62,13 @@ function openModal(image) {
         case "1":
             modalContent.innerHTML = `<h1>Java${closeButton}</h1><p>- I know how to use the object-oriented programming language Java<br>
             - The IDE I used until now was Eclipse<br>- Besides the basic concepts I know other programming concepts like generics, 
-            wrapper classes, collections, polymorphism, functional interfaces & lambdas, etc.</p>`;
+            different collections and when to use a specific one, polymorphism, functional interfaces & lambdas, etc.</p>`;
             break;
         case "2":
             modalContent.innerHTML = `<h1>Python${closeButton}</h1><p>- Python is my favorite programming language so far<br>
-            - The most used libraries are pandas and numpy<br>- Currently I'm diving deeper into the topic of machine learning
-            and I'm working with libraries like scikit-learn and Pytorch <br> - I have already developed some applications in Python</p>`;
+            - The most used libraries are pandas and numpy<br> - I have already developed some applications in Python<br>
+            - Know how to retrieve data from APIs / Excel tables and process / clean them<br>- I can also visualize data using dashboards<br>
+            - Currently I'm diving deeper into the topic of machine learning and I'm working with libraries like scikit-learn and Pytorch</p>`;
             break;
         case "3":
             modalContent.innerHTML = `<h1>R${closeButton}</h1><p>- I am familiar with R Studio<br>- I have done basic statistical analysis 

@@ -111,7 +111,8 @@ section {
 }
 
 .project img {
-    max-width: 400px;
+    width: 400px; /* Changes size of project pictures here*/
+    height: 300px;
     margin-right: 1.5rem;
     transition: transform 0.3s;
 }
