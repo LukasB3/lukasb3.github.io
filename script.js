@@ -10,7 +10,8 @@ const projects = [
         cryptocurrency are displayed, as well as a sentiment of the last 50 tweets for each cryptocurrency. The data for this 
         comes from the Twitter Developer API.<br><br>Everything was visualized with the help of Dash Plotly. Libraries used are:
         requests (to handle the API requests), pandas (to process the data), textblob (for natural language processing and 
-        sentiment analysis).`,
+        sentiment analysis).<br><br>// Edit: Unfortunately, the Twitter API to retrieve tweets has become chargeable 
+        ($100 / month), so I had to remove the functionality to view the last 5 tweets and the sentiment analysis.`,
         link: "https://lukasb4.eu.pythonanywhere.com/"
     },
     {
@@ -76,8 +77,9 @@ function openModal(image) {
             break;
         case "4":
             modalContent.innerHTML = `<h1>Databases${closeButton}</h1><p>- I have experience using sql / nosql databases<br>
-            - Until now I have worked with mongoDB and the database from deta.sh<br>- Data from the database was transmitted 
-            to a front end team using fastAPI (a web framework for building APIs with Python)</p>`;
+            - Until now I have worked with mongoDB and the database from deta.sh<br>- I know how to use databases, how to add
+            or read out data<br>- For example, in one project I retrieved data from an API, stored it in a database, and then
+            made it dynamically available to a frontend team using fastAPI</p>`;
             break;
         case "5":
             modalContent.innerHTML = `<h1>Teamwork${closeButton}</h1><p>- I really enjoy working in teams and learning / recieving 
